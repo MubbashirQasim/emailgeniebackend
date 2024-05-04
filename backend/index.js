@@ -7,6 +7,7 @@ import router from './routes/api.js';
 // import apiRoutes from './routes/api.js';
 
 const app = express();
+app.use(cors)
 const url = 'mongodb+srv://mubbashirwebs:HUbCYU7AysBH2IKB@cluster0.i96dh3f.mongodb.net/Cluster0?retryWrites=true&w=majority&appName=Cluster0'
 mongoose.connect(url , { useNewUrlParser: true}).then(()=>{
   // console.log(12)
